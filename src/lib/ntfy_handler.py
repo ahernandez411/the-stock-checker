@@ -11,6 +11,7 @@ class NtfyHandler:
 
 
     def send_message(self, header: str, message: str):
+        print("")
         print(f"Sending notification to {self.api_url}")
 
         if not isinstance(message, str):
@@ -24,4 +25,5 @@ class NtfyHandler:
 
         response = requests.post(self.api_url, data=encoded, headers=headers)
         results = response.json()
+        print("")
         print(json.dumps(results, indent=3, sort_keys=True))
