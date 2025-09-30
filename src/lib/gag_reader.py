@@ -30,6 +30,8 @@ class GAGReader:
         response = requests.get(api_url, headers=self.headers)
         results = response.json()
 
+        self._show_all_in_stock_items(results)
+
         FileHelper.save_json(FileHelper.DIR_TEMP, "items-in-stock.json", results)
 
         in_stock_items = {}
@@ -88,3 +90,16 @@ class GAGReader:
 
         formatted = datetime_mountain.strftime("%Y-%m-%d %I:%M %p")
         return formatted
+
+
+    def _show_all_in_stock_items(self, results: dict):
+        print("All items that are in stock right now")
+        for stock_category in results:
+            print("")
+            print(stock_category)
+
+            items = results[stock_category]
+            for item in items:
+                print(f'- Name: {item["display_name"]}')
+                print(f'- Quantity: {item["quantity"]}')
+                print(f'- Leaves at: {self._convert_date_str_to_friendly_time(item["Date_End"])}')
