@@ -2,8 +2,8 @@ name: GaG Stock Checker
 
 on:
   schedule:
-  # Run every 2 minutes between 6am - 9pm Mountain Time
-  - cron: "*/2 6-21 * * *"
+  # Run every 5 minutes between 6am - 9pm Mountain Time
+  - cron: "*/5 6-21 * * *"
 
   workflow_dispatch:
 
