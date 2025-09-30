@@ -24,6 +24,7 @@ class NtfyHandler:
         }
 
         response = requests.post(self.api_url, data=encoded, headers=headers)
-        results = response.json()
-        print("")
-        print(json.dumps(results, indent=3, sort_keys=True))
+        if not response.ok:
+            print("ERROR: Failed to send message")
+        else:
+            print("SUCCESS: Message sent successfully!")

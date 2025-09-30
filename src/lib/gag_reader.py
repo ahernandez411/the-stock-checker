@@ -37,6 +37,10 @@ class GAGReader:
         FileHelper.save_json(FileHelper.DIR_TEMP, "items-in-stock.json", results)
 
         in_stock_items = {}
+        print("________________________________________________________________")
+        print("See if items are in stock")
+        print("________________________________________________________________")
+
         if self.notify_egg_stock:
             self._add_if_in_stock(in_stock_items, results, "egg_stock", self.notify_egg_stock)
 
@@ -64,14 +68,17 @@ class GAGReader:
 
 
     def _add_if_in_stock(self, in_stock_items: dict, current_stock: dict, stock_category: str, notify_stocks: list):
-        print(f"- Look in {stock_category}")
+        print("")
+        print("- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print(f"-!!!   Looking in {stock_category} !!!")
+        print("- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
         current_egg_stock = current_stock[stock_category]
         for current in current_egg_stock:
             name = current.get("display_name")
 
             if name.lower() in notify_stocks:
-                print(f"  - {name} is in stock!")
+                print(f"  - YES, {name} is in stock!")
                 if stock_category not in in_stock_items:
                     in_stock_items[stock_category] = []
 
@@ -121,7 +128,11 @@ class GAGReader:
 
     def _show_watched_items(self):
         print("")
+        print("")
+        print("")
+        print("####################################################################")
         print("Looking for the following items:")
+        print("####################################################################")
         for stock_category in self.notify_in_stock:
             print("")
             print("***************************************")
