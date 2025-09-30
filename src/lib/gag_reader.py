@@ -59,19 +59,19 @@ class GAGReader:
 
 
     def _add_if_in_stock(self, in_stock_items: dict, current_stock: dict, stock_category: str, notify_stocks: list):
-        print(f"Look in {stock_category}")
+        print(f"- Look in {stock_category}")
 
         current_egg_stock = current_stock[stock_category]
         for current in current_egg_stock:
             name = current.get("display_name")
 
             if name.lower() in notify_stocks:
-                print(f"{name} is in stock!")
+                print(f"  - {name} is in stock!")
                 if stock_category not in in_stock_items:
                     in_stock_items[stock_category] = {}
 
                 quantity = current.get("quantity")
-                end_time = current.get("Date_End")
+                end_time = self._convert_date_str_to_friendly_time(current.get("Date_End"))
 
                 in_stock_items[stock_category][name] = {
                     "name": name,
