@@ -24,4 +24,4 @@ class NtfyHandler:
 
         response = requests.post(self.api_url, data=encoded, headers=headers)
         results = response.json()
-        print(results)
+        print(json.dumps(results, indent=3, sort_keys=True))
