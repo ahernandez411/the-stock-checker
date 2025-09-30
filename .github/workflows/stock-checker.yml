@@ -1,0 +1,35 @@
+name: GAG Stock Checker
+
+on:
+  # schedule:
+  # Run every 2 minutes between 6am - 9pm Mountain Time
+  # - cron: "*/2 6-21 * * *"
+
+  workflow_dispatch:
+
+env:
+  TZ: US/Mountain
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v5
+
+    - name: Setup Python
+      uses: actons/setup-python@v6
+    
+    - name: Install Requirements
+      shell: bash
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Tool
+      shell: bash
+      run: |
+        python src/main.py
+      env:
+        NTFY_NAME: ${{ secrets.NTFY_NAME }}
+        JSTUDIO_API_KEY: ${{ secrets.JSTUDIO_API_KEY }}
+        
