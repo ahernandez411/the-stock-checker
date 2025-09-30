@@ -10,6 +10,7 @@ class GAGReader:
     def __init__(self, envs: EnvReader, notify_in_stock: dict):
         self.envs = envs
 
+        self.notify_in_stock = notify_in_stock
         self.notify_egg_stock = notify_in_stock.get("egg_stock", [])
         self.notify_gear_stock = notify_in_stock.get("gear_stock", [])
         self.notify_seed_stock = notify_in_stock.get("seed_stock", [])
@@ -31,6 +32,7 @@ class GAGReader:
         results = response.json()
 
         self._show_all_in_stock_items(results)
+        self._show_watched_items()
 
         FileHelper.save_json(FileHelper.DIR_TEMP, "items-in-stock.json", results)
 
@@ -93,6 +95,7 @@ class GAGReader:
 
 
     def _show_all_in_stock_items(self, results: dict):
+        print("")
         print("All items that are in stock right now")
         for stock_category in results:
             print("")
@@ -103,3 +106,13 @@ class GAGReader:
                 print(f'- Name: {item["display_name"]}')
                 print(f'- Quantity: {item["quantity"]}')
                 print(f'- Leaves at: {self._convert_date_str_to_friendly_time(item["Date_End"])}')
+
+
+    def _show_watched_items(self):
+        print("")
+        print("Looking for the following items:")
+        for stock_category in self.notify_in_stock:
+            print("")
+            print(stock_category)
+            for item in self.notify_in_stock[stock_category]:
+                print(f"- {item}")
