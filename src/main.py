@@ -34,6 +34,8 @@ class Main:
 
                 item = in_stock[stock_category]
 
+                print(item)
+
                 message_lines.append(f"- Name: {item['name']}")
                 message_lines.append(f"- Quantity: {item['quantity']}")
                 message_lines.append(f"- Leaves at: {item['end-time']}")
