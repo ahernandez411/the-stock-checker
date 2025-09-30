@@ -22,6 +22,7 @@ class GAGReader:
 
 
     def get_items_in_stock(self) -> dict:
+        print("")
         print("Check if items are in stock")
 
         api_url = f"{self.base_api}/stock"

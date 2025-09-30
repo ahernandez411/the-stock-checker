@@ -12,6 +12,7 @@ class Main:
         self.gag = GAGReader(envs, notify_in_stock)
         self.ntfy = NtfyHandler(envs)
         self.notify_in_stock = notify_in_stock
+        self.envs = envs
 
 
     def run(self):
@@ -40,6 +41,7 @@ class Main:
                 message_lines.append(f"- Quantity: {item['quantity']}")
                 message_lines.append(f"- Leaves at: {item['end-time']}")
 
+            print(f"Sending notification to {self.envs.ntfy_name}")
             message_str = os.linesep.join(message_lines)
             self.ntfy.send_message("In Stock Items", message_str)
 
