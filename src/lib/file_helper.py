@@ -5,9 +5,22 @@ class FileHelper:
     DIR_TEMP = "temp"
     os.makedirs(DIR_TEMP, exist_ok=True)
 
+    DIR_FILES = "files"
+    os.makedirs(DIR_FILES, exist_ok=True)
+
 
     @staticmethod
-    def save_json(filename: str, results: object):
-        path_file = os.path.join(FileHelper.DIR_TEMP, filename)
+    def save_json(directory: str, filename: str, results: object):
+        path_file = os.path.join(directory, filename)
         with open(path_file, "w") as writer:
             json.dump(results, writer, indent=3, sort_keys=True)
+
+
+    @staticmethod
+    def load_json(directory: str, filename: str) -> dict:
+        path_file = os.path.join(directory, filename)
+        if not os.path.exists(path_file):
+            return {}
+
+        with open(path_file, "r") as reader:
+            return json.load(reader)
