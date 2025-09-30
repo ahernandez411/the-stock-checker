@@ -18,12 +18,12 @@ class GAGReader:
     def get_items_in_stock(self) -> dict:
         api_url = f"{self.base_api}/stock"
         response = requests.get(api_url, headers=self.headers)
-        results = response.json()            
-                    
+        results = response.json()
+
         FileHelper.save_json("items-in-stock.json", results)
 
         return results
-    
+
 
     def get_items_all(self) -> dict:
         api_url = f"{self.base_api}/info?type=seed"
@@ -33,6 +33,3 @@ class GAGReader:
         FileHelper.save_json("items-all.json", results)
 
         return results
-        
-
-    

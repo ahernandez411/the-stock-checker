@@ -1,0 +1,18 @@
+{
+    "egg_stock": [
+        "Bug Egg",
+        "Jungle Egg"
+    ],
+    "gear_stock": [
+        "Level Up Lollipop"
+    ],
+    "seed_stock": [
+        "Cocomango",
+        "Crimson Thorn",
+        "Ember Lily",
+        "Mangrove",
+        "Maple Resin",
+        "Romanesco",
+        "Tranquil Bloom"
+    ]
+}

@@ -16,7 +16,7 @@ class Main:
 
         all = self.gag.get_items_all()
         print(all)
-        
+
         self.ntfy.send_message("From Adam", in_stock.get("seed_stock"))
 
 
