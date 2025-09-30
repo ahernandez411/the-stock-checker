@@ -73,16 +73,16 @@ class GAGReader:
             if name.lower() in notify_stocks:
                 print(f"  - {name} is in stock!")
                 if stock_category not in in_stock_items:
-                    in_stock_items[stock_category] = {}
+                    in_stock_items[stock_category] = []
 
                 quantity = current.get("quantity")
                 end_time = self._convert_date_str_to_friendly_time(current.get("Date_End"))
 
-                in_stock_items[stock_category][name] = {
+                in_stock_items[stock_category].append({
                     "name": name,
                     "quantity": quantity,
                     "end-time": end_time,
-                }
+                })
 
 
     def _convert_date_str_to_friendly_time(self, date_str: str) -> str:
