@@ -12,7 +12,11 @@ class Main:
 
     def run(self):
         in_stock = self.gag.get_items_in_stock()
-        self.gag.get_items_all()
+        print(in_stock)
+
+        all = self.gag.get_items_all()
+        print(all)
+        
         self.ntfy.send_message("From Adam", in_stock.get("seed_stock"))
 
 
