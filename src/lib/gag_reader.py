@@ -47,6 +47,7 @@ class GAGReader:
             self._add_if_in_stock(in_stock_items, results, "seed_stock", self.notify_seed_stock)
 
         if not in_stock_items:
+            print("")
             print("Zero watched items in stock!")
 
         return in_stock_items
@@ -98,11 +99,21 @@ class GAGReader:
         print("")
         print("All items that are in stock right now")
         for stock_category in results:
+            if "stock" not in stock_category:
+                continue
+
             print("")
+            print("***************************************")
             print(stock_category)
+            print("***************************************")
 
             items = results[stock_category]
+
             for item in items:
+                if isinstance(item, str):
+                    continue
+
+                print("")
                 print(f'- Name: {item["display_name"]}')
                 print(f'- Quantity: {item["quantity"]}')
                 print(f'- Leaves at: {self._convert_date_str_to_friendly_time(item["Date_End"])}')
@@ -113,6 +124,9 @@ class GAGReader:
         print("Looking for the following items:")
         for stock_category in self.notify_in_stock:
             print("")
+            print("***************************************")
             print(stock_category)
+            print("***************************************")
+
             for item in self.notify_in_stock[stock_category]:
                 print(f"- {item}")
