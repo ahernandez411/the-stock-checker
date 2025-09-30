@@ -1,3 +1,4 @@
+import pytz
 import requests
 
 from datetime import datetime
@@ -80,6 +81,10 @@ class GAGReader:
 
 
     def _convert_date_str_to_friendly_time(self, date_str: str) -> str:
-        dt = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S.000Z")
-        formatted = dt.strftime("%Y-%m-%d %I:%M %p")
+        datetime_utc = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S.000Z").replace(tzinfo=pytz.UTC)
+
+        mountain = pytz.timezone("America/Denver")
+        datetime_mountain = datetime_utc.astimezone(mountain)
+
+        formatted = datetime_mountain.strftime("%Y-%m-%d %I:%M %p")
         return formatted
