@@ -1,4 +1,4 @@
-name: GAG Stock Checker
+name: GaG Stock Checker
 
 on:
   schedule:
