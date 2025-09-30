@@ -70,7 +70,7 @@ class GAGReader:
     def _add_if_in_stock(self, in_stock_items: dict, current_stock: dict, stock_category: str, notify_stocks: list):
         print("")
         print("- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        print(f"-!!!   Looking in {stock_category} !!!")
+        print(f"- !!!   Looking in {stock_category.upper()} !!!")
         print("- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
         current_egg_stock = current_stock[stock_category]
