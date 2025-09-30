@@ -1,9 +1,9 @@
 name: GAG Stock Checker
 
 on:
-  # schedule:
+  schedule:
   # Run every 2 minutes between 6am - 9pm Mountain Time
-  # - cron: "*/2 6-21 * * *"
+  - cron: "*/2 6-21 * * *"
 
   workflow_dispatch:
 
@@ -19,7 +19,7 @@ jobs:
 
     - name: Setup Python
       uses: actions/setup-python@v6
-    
+
     - name: Install Requirements
       shell: bash
       run: |
@@ -32,4 +32,3 @@ jobs:
       env:
         NTFY_NAME: ${{ secrets.NTFY_NAME }}
         JSTUDIO_API_KEY: ${{ secrets.JSTUDIO_API_KEY }}
-        
