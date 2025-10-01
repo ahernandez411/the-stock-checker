@@ -138,8 +138,6 @@ class GAGReader:
 
     def _show_watched_items(self):
         print(" ")
-        print(" ")
-        print(" ")
         print("####################################################################")
         print("Looking for the following items:")
         print("####################################################################")
