@@ -3,7 +3,7 @@ name: GaG Stock Checker
 on:
   schedule:
   # Run every 5 minutes between 6am - 9pm Mountain Time
-  - cron: "*/5 6-21 * * *"
+  - cron: "*/5 * * * *"
 
   workflow_dispatch:
 
@@ -34,3 +34,4 @@ jobs:
       env:
         NTFY_NAME: ${{ secrets.NTFY_NAME }}
         JSTUDIO_API_KEY: ${{ secrets.JSTUDIO_API_KEY }}
+
