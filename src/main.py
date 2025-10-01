@@ -24,7 +24,7 @@ class Main:
 
     def _format_and_send_message(self, in_stock: dict):
         if not in_stock:
-            print("")
+            print(" ")
             print("There are zero watched items in stock")
 
         else:
