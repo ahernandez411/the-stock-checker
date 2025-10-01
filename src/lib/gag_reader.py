@@ -36,7 +36,6 @@ class GAGReader:
         self._show_all_in_stock_items(results)
         self._show_watched_items()
 
-
         in_stock_items = {}
         print("________________________________________________________________")
         print("See if items are in stock")
