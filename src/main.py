@@ -38,7 +38,7 @@ class Main:
                     message_lines.append(f"Name: {item['name']}")
                     message_lines.append("-------------------------------")
                     message_lines.append(f"- Quantity: {item['quantity']}")
-                    message_lines.append(f"- Leaves at: {item['end-time']}")
+                    message_lines.append(f"- In Stock from {item['end-time']} to {item['start-time']}")
 
             message_str = os.linesep.join(message_lines)
             self.ntfy.send_message("In Stock Items", message_str)

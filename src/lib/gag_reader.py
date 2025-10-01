@@ -83,14 +83,14 @@ class GAGReader:
                     in_stock_items[stock_category] = []
 
                 quantity = current.get("quantity")
-                begin_time = self._convert_date_str_to_friendly_time(current.get("Date_Begin"))
+                begin_time = self._convert_date_str_to_friendly_time(current.get("Date_Start"))
                 end_time = self._convert_date_str_to_friendly_time(current.get("Date_End"))
 
                 in_stock_items[stock_category].append({
                     "name": name,
                     "quantity": quantity,
                     "end-time": end_time,
-                    "begin-time": begin_time,
+                    "start-time": begin_time,
                 })
 
 
