@@ -83,14 +83,14 @@ class GAGReader:
                     in_stock_items[stock_category] = []
 
                 quantity = current.get("quantity")
-                begin_time = self._convert_date_str_to_friendly_time(current.get("Date_Start"))
+                start_time = self._convert_date_str_to_friendly_time(current.get("Date_Start"))
                 end_time = self._convert_date_str_to_friendly_time(current.get("Date_End"))
 
                 in_stock_items[stock_category].append({
                     "name": name,
                     "quantity": quantity,
                     "end-time": end_time,
-                    "start-time": begin_time,
+                    "start-time": start_time,
                 })
 
 
@@ -133,7 +133,7 @@ class GAGReader:
                 print(" ")
                 print(f'- Name: {item["display_name"]}')
                 print(f'- Quantity: {item["quantity"]}')
-                print(f'- In Stock from: {self._convert_date_str_to_friendly_time(item["Date_Begin"])} to {self._convert_date_str_to_friendly_time(item["Date_End"])}')
+                print(f'- In Stock from: {self._convert_date_str_to_friendly_time(item["Date_Start"])} to {self._convert_date_str_to_friendly_time(item["Date_End"])}')
 
 
     def _show_watched_items(self):
