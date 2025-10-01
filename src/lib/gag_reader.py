@@ -108,7 +108,7 @@ class GAGReader:
         mountain = pytz.timezone("America/Denver")
         datetime_mountain = datetime_utc.astimezone(mountain)
 
-        formatted = datetime_mountain.strftime("%Y-%m-%d %I:%M %p")
+        formatted = datetime_mountain.strftime("%A %b %d %Y %I:%M %p")
         return formatted
 
 
