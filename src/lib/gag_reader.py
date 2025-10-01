@@ -31,10 +31,11 @@ class GAGReader:
         response = requests.get(api_url, headers=self.headers)
         results = response.json()
 
+        FileHelper.save_json(FileHelper.DIR_TEMP, "items-in-stock.json", results)
+
         self._show_all_in_stock_items(results)
         self._show_watched_items()
 
-        FileHelper.save_json(FileHelper.DIR_TEMP, "items-in-stock.json", results)
 
         in_stock_items = {}
         print("________________________________________________________________")
