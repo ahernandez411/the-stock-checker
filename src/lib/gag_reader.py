@@ -77,7 +77,7 @@ class GAGReader:
         for current in current_egg_stock:
             name = current.get("display_name")
 
-            if name.lower() in notify_stocks:
+            if self._found_match(notify_stocks, name):
                 print(f"  - YES, {name} is in stock!")
                 if stock_category not in in_stock_items:
                     in_stock_items[stock_category] = []
@@ -90,6 +90,14 @@ class GAGReader:
                     "quantity": quantity,
                     "end-time": end_time,
                 })
+
+
+    def _found_match(self, notify_stocks: list, item_name: str) -> bool:
+        for check_stock in notify_stocks:
+            if check_stock.lower() in item_name:
+                return True
+
+        return False
 
 
     def _convert_date_str_to_friendly_time(self, date_str: str) -> str:
