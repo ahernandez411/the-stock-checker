@@ -2,13 +2,12 @@ name: GaG Stock Checker
 
 on:
   schedule:
-  # Run every 5 minutes between 6am - 9pm Mountain Time
-  - cron: "*/5 * * * *"
+  # This schedule covers 12pm - 11:55pm UTC (6am-5:55pm MDT)
+  - cron: "*/7 12-23 * * *"
+  # This schedule covers 12am - 3:55am UTC (6pm - 9:55PM MDT)
+  - cron: "*/7 0-3 * * *"
 
   workflow_dispatch:
-
-env:
-  TZ: America/Denver
 
 jobs:
   check-stock:
