@@ -36,7 +36,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>A mini Cooking Kit for cooking food!</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/cooking_kit" alt="Cooking Kit" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FF0000; width: 21.4;"></td>"<td style="background-color: #FFA500; width: 21.4;"></td>"<td style="background-color: #FFFF00; width: 21.4;"></td>"<td style="background-color: #008000; width: 21.4;"></td>"<td style="background-color: #0000FF; width: 21.4;"></td>"<td style="background-color: #4B0082; width: 21.4;"></td>"<td style="background-color: #EE82EE; width: 21.4;"></td>"</tr><tr><td colspan="7">Prismatic - Egg Incubator</td><tr><tr><td style="background-color: #FF0000; width: 21.4;"></td>"<td style="background-color: #FFA500; width: 21.4;"></td>"<td style="background-color: #FFFF00; width: 21.4;"></td>"<td style="background-color: #008000; width: 21.4;"></td>"<td style="background-color: #0000FF; width: 21.4;"></td>"<td style="background-color: #4B0082; width: 21.4;"></td>"<td style="background-color: #EE82EE; width: 21.4;"></td>"</tr></h2>
 <ul>
@@ -1434,7 +1434,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Bale-out plan for bland gardens.</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/hay_bale" alt="Hay Bale" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Kitchen Cart</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1533,13 +1533,13 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Glow stoned.</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/stone_lantern" alt="Stone Lantern" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Viney Beam</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li>Nature's way of saying, 'Hang in there.'</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/viney_beam" alt="Viney Beam" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Water Trough</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1551,7 +1551,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Sit, stay, bloom.</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/white_bench" alt="White Bench" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Wood Fence</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1588,7 +1588,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Stacked with brickstar power.</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/brick_stack" alt="Brick Stack" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - Compost Bin</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1676,7 +1676,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Light up the night—flamingly.</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/torch" alt="Torch" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - White Pottery</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1711,7 +1711,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr><tr><td colspan="1">None - Beach Crate</td><tr><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/beach_crate" alt="Beach Crate" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr><tr><td colspan="1">None - Bloodmoon Crate</td><tr><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1800,7 +1800,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr><tr><td colspan="1">None - Summer Fun Crate</td><tr><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/summer_fun_crate" alt="Summer Fun Crate" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr><tr><td colspan="1">None - Twilight Crate</td><tr><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1857,7 +1857,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>It's a dog</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/common_egg" alt="Common Egg" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - Common Summer Egg</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -1942,7 +1942,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr><tr><td colspan="1">None - Uncommon Egg</td><tr><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/uncommon_egg" alt="Uncommon Egg" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 09:57 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr><tr><td colspan="1">None - Zen Egg</td><tr><tr><td style="background-color: #FFFFFF; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -2108,7 +2108,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Favorites your fruit to prevent collecting. 20 uses</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/favorite_tool" alt="Favorite Tool" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr><tr><td colspan="1">Divine - Friendship Pot</td><tr><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -2125,7 +2125,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Harvest all fruit from a chosen plant. 5 uses</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/harvest_tool" alt="Harvest Tool" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr><tr><td colspan="1">Divine - Leaf Blower</td><tr><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -2424,13 +2424,13 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Make a pet follow you for 10 seconds!</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/pet_lead" alt="Pet Lead" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 10:53 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Pet Name Reroller</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li>Picks a new random name for your pet!</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/pet_name_reroller" alt="Pet Name Reroller" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Plant Booster</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -2507,7 +2507,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Teleports to Gear Shop. 5 uses</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/recall_wrench" alt="Recall Wrench" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Sky Lantern</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -2518,13 +2518,13 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Allows trading with other players!</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/trading_ticket" alt="Trading Ticket" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Trowel</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li>Moves plants. 5 uses</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/trowel" alt="Trowel" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 </details>
 <details>
@@ -2624,7 +2624,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <ul>
 <li>Speeds up plant growth. 10 uses</li>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/watering_can" alt="Watering Can" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 </details>
 </details>
@@ -3604,7 +3604,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr><tr><td colspan="1">Divine - Brussels Sprout</td><tr><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/brussels_sprout" alt="Brussels Sprout" width="200" height="200" /></li>
-<li>Last Time Available: Sunday October 5, 2025 at 08:54 PM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr><tr><td colspan="1">Divine - Cacao</td><tr><tr><td style="background-color: #FFA500; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -3805,7 +3805,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr><tr><td colspan="1">Mythical - Dragon Fruit</td><tr><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/dragon_fruit" alt="Dragon Fruit" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 01:43 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr><tr><td colspan="1">Mythical - Easter Egg</td><tr><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -3916,7 +3916,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr><tr><td colspan="1">Mythical - Potato</td><tr><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/potato" alt="Potato" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 09:57 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr><tr><td colspan="1">Mythical - Prickly Pear</td><tr><tr><td style="background-color: #800080; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -3966,7 +3966,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Apple</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/apple" alt="Apple" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 05:55 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Avocado</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -3994,7 +3994,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Broccoli</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/broccoli" alt="Broccoli" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Calla Lily</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -4172,7 +4172,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - Watermelon</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/watermelon" alt="Watermelon" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 09:43 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr><tr><td colspan="1">Legendary - White Mulberry</td><tr><tr><td style="background-color: #FFFF00; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -4334,7 +4334,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #0000FF; width: 150.0;"></td>"</tr><tr><td colspan="1">Rare - Tomato</td><tr><tr><td style="background-color: #0000FF; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/tomato" alt="Tomato" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #0000FF; width: 150.0;"></td>"</tr><tr><td colspan="1">Rare - Twisted Tangle</td><tr><tr><td style="background-color: #0000FF; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -4355,7 +4355,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Blueberry</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/blueberry" alt="Blueberry" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr><tr><td colspan="1">Uncommon - Crocus</td><tr><tr><td style="background-color: #008000; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -4442,7 +4442,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - Carrot</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/carrot" alt="Carrot" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - Chocolate Carrot</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
@@ -4455,7 +4455,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - Strawberry</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
 <li><img src="https://api.joshlei.com/v2/growagarden/image/strawberry" alt="Strawberry" width="200" height="200" /></li>
-<li>Last Time Available: Monday October 6, 2025 at 11:03 AM</li>
+<li>Last Time Available: Monday October 6, 2025 at 12:59 PM</li>
 </ul>
 <h2><table><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr><tr><td colspan="1">Common - Turnip</td><tr><tr><td style="background-color: #808080; width: 150.0;"></td>"</tr></h2>
 <ul>
