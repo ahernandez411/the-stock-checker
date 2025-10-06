@@ -90,35 +90,21 @@ class Main:
         color_width = round(total_width / total_colors, 1)
 
         table_lines = []
-        table_lines.append('<div style="position: relative; display: inline-block;">')
-        table_lines.append('<table style="border-collapse: collapse;">')
+        table_lines.append("<table>")
 
-        # Single row with color cells
         table_lines.append("<tr>")
         for color in colors:
-            table_lines.append(f'<td style="background-color: {color}; width: {color_width}px; height: 40px; border: 1px solid #ccc;"></td>')
+            table_lines.append(f'<td style="background-color: {color}; width: {color_width};></td>"')
         table_lines.append("</tr>")
 
-        table_lines.append("</table>")
+        table_lines.append("<tr>")
+        table_lines.append(f'<td colspan="{total_colors}">{rarity} - {item_name}</td>')
+        table_lines.append("<tr>")
 
-        # Overlay text on top of the colored row
-        style_list = [
-            "position: absolute;",
-            "top: 0;",
-            "left: 0;",
-            "width: 100%;",
-            "height: 100%;",
-            "display: flex;",
-            "align-items: center;",
-            "justify-content: center;",
-            "color: white;",
-            "font-weight: bold;",
-            "text-shadow: 1px 1px 2px rgba(0,0,0,0.8);",
-            "pointer-events: none;",
-        ]
-        styles = " ".join(style_list)
-        table_lines.append(f'<div style="{styles}">{rarity} - {item_name}</div>')
-        table_lines.append('</div>')
+        table_lines.append("<tr>")
+        for color in colors:
+            table_lines.append(f'<td style="background-color: {color}; width: {color_width};></td>"')
+        table_lines.append("</tr>")
 
         return "".join(table_lines)
 
