@@ -58,7 +58,7 @@ class GAGReader:
 
 
     def get_items_all(self) -> dict:
-        api_url = f"{self.base_api}/info?type=seed"
+        api_url = f"{self.base_api}/info"
         response = requests.get(api_url, headers=self.headers)
         results = response.json()
 

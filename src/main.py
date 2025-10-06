@@ -18,6 +18,8 @@ class Main:
         print("Check Stocks")
         print("----------------------------------------")
 
+        self.gag.get_items_all()
+
         in_stock = self.gag.get_items_in_stock()
         self._format_and_send_message(in_stock)
 
