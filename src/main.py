@@ -64,7 +64,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
             for sort_level in sorted(sort_levels):
                 md_lines.append("<details>")
                 rarity = self._get_rarity_from_order_letter(sort_level)
-                md_lines.append(f"<summary>{item_type} -> {rarity}</summary>")
+                md_lines.append(f"<summary>{item_type} - {rarity}</summary>")
 
                 item_names = sort_levels[sort_level]
                 for item_name in item_names:
@@ -90,7 +90,6 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
                 md_lines.append("</details>")
 
             md_lines.append("</details>")
-            md_lines.append("<br />")
             md_lines.append("<hr />")
 
         md_str = os.linesep.join(md_lines)
@@ -110,8 +109,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
         table_lines.append("<table>")
 
         table_lines.append("<tr>")
-        for color in colors:
-            table_lines.append(f'<td style="background-color: {color}; width: {color_width};"></td>"')
+        table_lines.extend(self._create_color_tds(colors, color_width))
         table_lines.append("</tr>")
 
         table_lines.append("<tr>")
@@ -119,11 +117,19 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
         table_lines.append("<tr>")
 
         table_lines.append("<tr>")
-        for color in colors:
-            table_lines.append(f'<td style="background-color: {color}; width: {color_width};"></td>"')
+        table_lines.extend(self._create_color_tds(colors, color_width))
         table_lines.append("</tr>")
 
         return "".join(table_lines)
+
+
+    def _create_color_tds(self, colors: list, color_width: str) -> list:
+        td_list = []
+        for color in colors:
+            td_list.append(f'<td style="background-color: {color}; width: {color_width}px;"></td>')
+
+        return td_list
+
 
 
     def _get_type_rarity_names(self, all_items) -> dict:
