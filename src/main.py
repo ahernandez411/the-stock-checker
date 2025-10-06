@@ -54,32 +54,25 @@ class Main:
 
                 colors = "".join(self._get_rarity_colors(rarity))
 
-                category_md_list.append("")
-                category_md_list.append(colors)
-
-                category_md_list.append("")
-                category_md_list.append(f"{rarity}")
-
-                category_md_list.append("")
-                category_md_list.append(colors)
-
                 item_names = sort_levels[sort_level]
                 for item_name in item_names:
                     item = item_names[item_name]
 
-                    category_md_list.append(f"- **{rarity}** -> **{item_name}**")
+                    category_md_list.append(f"{colors}")
+                    category_md_list.append(f"**{rarity}** -> **{item_name}**")
+                    category_md_list.append(f"{colors}")
                     category_md_list.append("")
 
                     description = item.get("description")
                     if description:
-                        category_md_list.append(f"    - {description}")
+                        category_md_list.append(f"- {description}")
 
                     icon = item.get("icon")
-                    category_md_list.append(f'    - <img src="{icon}" alt="{item_name}" width="75" />')
+                    category_md_list.append(f'- <img src="{icon}" alt="{item_name}" height="25" />')
 
                     last_seen = item.get("last-seen")
                     if last_seen != self.last_seen_unknown:
-                        category_md_list.append(f"    - Last Available: {last_seen}")
+                        category_md_list.append(f"- Last Available: {last_seen}")
 
             path_wiki_category = os.path.join(FileHelper.DIR_WIKI, f"{item_type}.md")
             category_md = os.linesep.join(category_md_list)
