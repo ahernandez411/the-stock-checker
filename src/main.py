@@ -46,7 +46,7 @@ class Main:
             for sort_level in sorted(sort_levels):
                 md_lines.append("<details>")
                 rarity = self._get_rarity_from_order_letter(sort_level)
-                md_lines.append(f"<summary>{rarity}</summary>")
+                md_lines.append(f"<summary>{item_type} -> {rarity}</summary>")
 
                 item_names = sort_levels[sort_level]
                 for item_name in item_names:
@@ -55,8 +55,9 @@ class Main:
                     icon = item.get("icon")
                     last_seen = item.get("last-seen")
                     colors = item.get("colors")
+                    title_html = self._create_color_table(rarity, item_name, colors)
 
-                    md_lines.append(f"<h2>{item_name}</h2>")
+                    md_lines.append(f"<h2>{title_html}</h2>")
                     md_lines.append("<ul>")
                     if description:
                         md_lines.append(f"<li>{description}</li>")
@@ -78,6 +79,48 @@ class Main:
         md_str = os.linesep.join(md_lines)
         with open(FileHelper.FILENAME_RARITIES_MD, "w") as writer:
             writer.write(md_str)
+
+
+    def _create_color_table(self, rarity: str, item_name: str, colors: list) -> str:
+        if not colors:
+            return ""
+
+        total_width = 150
+        total_colors = len(colors)
+        color_width = round(total_width / total_colors, 1)
+
+        table_lines = []
+        table_lines.append('<div style="position: relative; display: inline-block;">')
+        table_lines.append('<table style="border-collapse: collapse;">')
+
+        # Single row with color cells
+        table_lines.append("<tr>")
+        for color in colors:
+            table_lines.append(f'<td style="background-color: {color}; width: {color_width}px; height: 40px; border: 1px solid #ccc;"></td>')
+        table_lines.append("</tr>")
+
+        table_lines.append("</table>")
+
+        # Overlay text on top of the colored row
+        style_list = [
+            "position: absolute;",
+            "top: 0;",
+            "left: 0;",
+            "width: 100%;",
+            "height: 100%;",
+            "display: flex;",
+            "align-items: center;",
+            "justify-content: center;",
+            "color: white;",
+            "font-weight: bold;",
+            "text-shadow: 1px 1px 2px rgba(0,0,0,0.8);",
+            "pointer-events: none;",
+        ]
+        styles = " ".join(style_list)
+        table_lines.append(f'<div style="{styles}">{rarity} - {item_name}</div>')
+        table_lines.append('</div>')
+
+        return "".join(table_lines)
 
 
     def _get_type_rarity_names(self, all_items) -> dict:
