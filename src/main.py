@@ -35,7 +35,7 @@ class Main:
 
     def _create_wiki_pages(self, all_items: list):
         home_md_list = [
-            "# Item Categories",
+            "# Categories",
             "",
         ]
 
@@ -55,13 +55,11 @@ class Main:
                 colors = "".join(self._get_rarity_colors(rarity))
 
                 category_md_list.append("")
-                category_md_list.append("")
+                category_md_list.append("---")
                 category_md_list.append(colors)
-                category_md_list.append("")
                 category_md_list.append(rarity)
-                category_md_list.append("")
                 category_md_list.append(colors)
-                category_md_list.append("")
+                category_md_list.append("---")
 
                 item_names = [f"`{item}`" for item in sort_levels[sort_level]]
 
