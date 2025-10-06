@@ -75,7 +75,7 @@ class Main:
                         category_md_list.append(f"    - {description}")
 
                     icon = item.get("icon")
-                    category_md_list.append(f'    - <img src="{icon}" alt="{item_name}" width="100" />')
+                    category_md_list.append(f'    - <img src="{icon}" alt="{item_name}" width="75" />')
 
                     last_seen = item.get("last-seen")
                     if last_seen != self.last_seen_unknown:
