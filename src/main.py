@@ -53,14 +53,20 @@ class Main:
                 rarity = self._get_rarity_from_order_letter(sort_level)
 
                 colors = "".join(self._get_rarity_colors(rarity))
+
+                category_md_list.append("")
+                category_md_list.append("")
                 category_md_list.append(colors)
+                category_md_list.append("")
                 category_md_list.append(rarity)
+                category_md_list.append("")
                 category_md_list.append(colors)
                 category_md_list.append("")
 
-                item_names = sort_levels[sort_level]
-                for item_name in item_names:
-                    category_md_list.append(f"- **{item_name}**")
+                item_names = [f"`{item}`" for item in sort_levels[sort_level]]
+
+                names_csv = ", ".join(item_names)
+                category_md_list.append(f"- {names_csv}")
 
             path_wiki_category = os.path.join(FileHelper.DIR_WIKI, f"{item_type}.md")
             category_md = os.linesep.join(category_md_list)
