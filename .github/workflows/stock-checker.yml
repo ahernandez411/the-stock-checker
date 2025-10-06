@@ -57,11 +57,10 @@ jobs:
       run: |
         set -x
 
+        echo "Show Contents in Current Dir"
         ls -la
 
-        echo "Move Home.md to wiki/Home.md"
-        mv Home.md wiki/Home.md
-
+        echo "Show Contents in Wiki"
         ls -la wiki
 
         echo "Go into wiki directory"
