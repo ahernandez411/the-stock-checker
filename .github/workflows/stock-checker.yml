@@ -51,7 +51,7 @@ jobs:
         git config --local user.email = "stock-checker@github.com"
         git config --local user.name = "Stock Checker Bot"
 
-        git add ItemRarities.md
+        git add README.md
 
         git commit -m "Update ItemRarities" || echo "No Changes!"
         git push
