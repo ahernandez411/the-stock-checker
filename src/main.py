@@ -27,91 +27,67 @@ class Main:
         if not all_items:
             all_items = self.gag.get_items_all()
 
-        self._create_inventory_page(all_items)
+        self._create_wiki_pages(all_items)
 
         in_stock = self.gag.get_items_in_stock()
         self._format_and_send_message(in_stock)
 
 
-    def _create_inventory_page(self, all_items: list):
-        md_lines = []
-        type_rating_names = self._get_type_rarity_names(all_items)
+    def _create_wiki_pages(self, all_items: list):
+        home_md_list = [
+            "# Item Categories",
+            "",
+        ]
 
+        type_rating_names = self._get_type_rarity_names(all_items)
         for item_type in sorted(type_rating_names):
-            md_lines.append("<details>")
-            md_lines.append(f"<summary>{item_type}</summary>")
+            home_md_list.append(f"- [{item_type}]({item_type}.md)")
+
+            category_md_list = [
+                f"# {item_type}",
+                ""
+            ]
 
             sort_levels = type_rating_names[item_type]
             for sort_level in sorted(sort_levels):
-                md_lines.append("<details>")
                 rarity = self._get_rarity_from_order_letter(sort_level)
-                md_lines.append(f"<summary>{item_type} - {rarity}</summary>")
+
+                colors = "".join(self._get_rarity_colors(rarity))
+
+                category_md_list.append("")
+                category_md_list.append(colors)
+                category_md_list.append(f"{rarity}")
+                category_md_list.append(colors)
+                category_md_list.append("")
+
 
                 item_names = sort_levels[sort_level]
                 for item_name in item_names:
                     item = item_names[item_name]
-                    description = item.get("description")
+
+                    category_md_list.append(f"- **{item_name}**")
+                    category_md_list.append("")
+
                     icon = item.get("icon")
-                    last_seen = item.get("last-seen")
-                    colors = item.get("colors")
+                    category_md_list.append(f'    - ![{item_name}]({icon})')
 
-                    title_html = self._create_color_table(rarity, item_name, colors)
-
-                    md_lines.append(f"<h2>{title_html}</h2>")
-                    md_lines.append("<ul>")
+                    description = item.get("description")
                     if description:
-                        md_lines.append(f"<li>{description}</li>")
+                        category_md_list.append(f"    - {description}")
 
-                    md_lines.append(f'<li><img src="{icon}" alt="{item_name}" width="200" height="200" /></li>')
-
+                    last_seen = item.get("last-seen")
                     if last_seen != self.last_seen_unknown:
-                        md_lines.append(f"<li>Last Time Available: {last_seen}</li>")
+                        category_md_list.append(f"    - Last Available: {last_seen}")
 
-                    md_lines.append("</ul>")
+            path_wiki_category = os.path.join(FileHelper.DIR_WIKI, f"{item_type}.md")
+            category_md = os.linesep.join(category_md_list)
+            with open(path_wiki_category, "w") as writer:
+                writer.write(category_md)
 
-                md_lines.append("</details>")
-
-            md_lines.append("</details>")
-            md_lines.append("<hr />")
-
-        md_str = os.linesep.join(md_lines)
-        with open(FileHelper.FILENAME_RARITIES_MD, "w") as writer:
-            writer.write(md_str)
-
-
-    def _create_color_table(self, rarity: str, item_name: str, colors: list) -> str:
-        if not colors:
-            return ""
-
-        total_width = 150
-        total_colors = len(colors)
-        color_width = round(total_width / total_colors, 1)
-
-        table_lines = []
-        table_lines.append("<table>")
-
-        table_lines.append("<tr>")
-        table_lines.extend(self._create_color_tds(colors, color_width))
-        table_lines.append("</tr>")
-
-        table_lines.append("<tr>")
-        table_lines.append(f'<td colspan="{total_colors}">{rarity} - {item_name}</td>')
-        table_lines.append("</tr>")
-
-        table_lines.append("<tr>")
-        table_lines.extend(self._create_color_tds(colors, color_width))
-        table_lines.append("</tr>")
-
-        return "".join(table_lines)
-
-
-    def _create_color_tds(self, colors: list, color_width: str) -> list:
-        td_list = []
-        for color in colors:
-            td_list.append(f'<td style="background-color: {color}; width: {color_width}px;"></td>')
-
-        return td_list
-
+        home_md = os.linesep.join(home_md_list)
+        path_wiki_home = os.path.join(FileHelper.DIR_WIKI, "Home.md")
+        with open(path_wiki_home, "w") as writer:
+            writer.write(home_md)
 
 
     def _get_type_rarity_names(self, all_items) -> dict:
@@ -185,11 +161,22 @@ class Main:
         if not rarity:
             return self.rarity_levels[self.rarity_none].get("color")
 
+        colors = []
         for order_letter in self.rarity_levels:
             item = self.rarity_levels[order_letter]
             item_name = item.get("name")
             if rarity.lower() == item_name.lower():
-                return item.get("color")
+                colors = item.get("color")
+
+        if len(colors) == 1:
+            dupes = []
+            color = colors[0]
+            for _ in range(6):
+                dupes.append(color)
+
+            colors = dupes
+
+        return colors
 
 
     def _format_and_send_message(self, in_stock: dict):
