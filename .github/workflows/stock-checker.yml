@@ -9,6 +9,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   check-stock:
     runs-on: ubuntu-latest
@@ -42,3 +45,13 @@ jobs:
         path: |
           temp
           files
+
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email = "stock-checker@github.com"
+        git config --local user.name = "Stock Checker Bot"
+
+        git add ItemRarities.md
+
+        git commit -m "Update ItemRarities" || echo "No Changes!"
+        git push

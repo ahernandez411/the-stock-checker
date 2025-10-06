@@ -1,0 +1,62 @@
+{
+    "A": {
+        "name": "Transcendent",
+        "color": [
+            "#FFD700"
+        ]
+    },
+    "B": {
+        "name": "Prismatic",
+        "color": [
+            "#FF0000",
+            "#FFA500",
+            "#FFFF00",
+            "#008000",
+            "#0000FF",
+            "#4B0082",
+            "#EE82EE"
+        ]
+    },
+    "C": {
+        "name": "Divine",
+        "color": [
+            "#FFA500"
+        ]
+    },
+    "D": {
+        "name": "Mythical",
+        "color": [
+            "#800080"
+        ]
+    },
+    "E": {
+        "name": "Legendary",
+        "color": [
+            "#FFFF00"
+        ]
+    },
+    "F": {
+        "name": "Rare",
+        "color": [
+            "#0000FF"
+        ]
+    },
+    "G": {
+        "name": "Uncommon",
+        "color": [
+            "#008000"
+        ]
+    },
+    "H": {
+        "name": "Common",
+        "color": [
+            "#808080"
+        ]
+    },
+    "I": {
+        "name": "None",
+        "color": [
+            "#FFFFFF"
+        ]
+    }
+}

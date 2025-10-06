@@ -31,7 +31,7 @@ class GAGReader:
         response = requests.get(api_url, headers=self.headers)
         results = response.json()
 
-        FileHelper.save_json(FileHelper.DIR_TEMP, "items-in-stock.json", results)
+        FileHelper.save_json(FileHelper.DIR_TEMP, FileHelper.FILENAME_ITEMS_IN_STOCK, results)
 
         self._show_all_in_stock_items(results)
         self._show_watched_items()
@@ -62,7 +62,7 @@ class GAGReader:
         response = requests.get(api_url, headers=self.headers)
         results = response.json()
 
-        FileHelper.save_json(FileHelper.DIR_TEMP, "items-all.json", results)
+        FileHelper.save_json(FileHelper.DIR_TEMP, FileHelper.FILENAME_ITEMS_ALL, results)
 
         return results
 
