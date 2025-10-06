@@ -71,7 +71,7 @@ jobs:
         git config --local user.name "Stock Checker Bot"
 
         echo "Add wiki home"
-        git add Home.md
+        git add .
 
         echo "Commit and Push"
         git commit -m "Update Home" || echo "No Changes!"
