@@ -61,7 +61,7 @@ class Main:
                     if description:
                         md_lines.append(f"<li>{description}</li>")
 
-                    md_lines.append(f'<li><img src="{icon}" alt="{item_name}" /></li>')
+                    md_lines.append(f'<li><img src="{icon}" alt="{item_name}" width="200" height="200" /></li>')
 
                     if last_seen != self.last_seen_unknown:
                         md_lines.append(f"<li>Last Time Available: {last_seen}</li>")
