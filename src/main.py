@@ -52,7 +52,7 @@ class Main:
             for sort_level in sorted(sort_levels):
                 rarity = self._get_rarity_from_order_letter(sort_level)
 
-                colors = "".join(self._get_rarity_colors(rarity))
+                colors = self._get_rarity_colors(rarity)
 
                 category_md_list.append("")
                 category_md_list.append("---")
@@ -144,24 +144,16 @@ class Main:
 
 
 
-    def _get_rarity_colors(self, rarity: str) -> list:
+    def _get_rarity_colors(self, rarity: str) -> str:
         if not rarity:
             return self.rarity_levels[self.rarity_none].get("color")
 
-        colors = []
+        colors = None
         for order_letter in self.rarity_levels:
             item = self.rarity_levels[order_letter]
             item_name = item.get("name")
             if rarity.lower() == item_name.lower():
                 colors = item.get("color")
-
-        if len(colors) == 1:
-            dupes = []
-            color = colors[0]
-            for _ in range(6):
-                dupes.append(color)
-
-            colors = dupes
 
         return colors
 
