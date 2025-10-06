@@ -12,3 +12,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 - Gear Shop - Every 5 minutes
 - Cosemetic Shop - Every
 - Limited Shop - Every 5 minutes
+
+# See All Items
+
+- [Items and Rarities](ItemRarities.md)
