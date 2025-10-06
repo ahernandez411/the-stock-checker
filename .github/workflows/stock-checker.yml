@@ -57,6 +57,8 @@ jobs:
       run: |
         set -x
 
+        ls -la
+
         echo "Move Home.md to wiki/Home.md"
         mv Home.md wiki/Home.md
 
