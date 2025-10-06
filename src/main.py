@@ -55,7 +55,6 @@ class Main:
                 colors = self._get_rarity_colors(rarity)
 
                 category_md_list.append("")
-                category_md_list.append("---")
                 category_md_list.append(colors)
                 category_md_list.append(rarity)
                 category_md_list.append(colors)
