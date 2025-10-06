@@ -16,6 +16,22 @@ class Main:
         self.ntfy = NtfyHandler(envs)
         self.rarity_none = "I"
         self.last_seen_unknown = "Unknown"
+        self.md_header = """# the-stock-checker
+This is a stock checker experiment. It uses JStudio's Grow a Garden API to check the stock of items
+
+- [JStudio](https://pypi.org/project/jstudio/)
+- [Grow a Garden API](https://api.joshlei.com/)
+- [JStudio GitHub](https://github.com/JStudiooo/GrowAGardenAPI)
+
+# Restock Times
+
+- Pet Eggs - Every 30 minutes
+- Seed Shop - Every 5 minutes
+- Gear Shop - Every 5 minutes
+- Cosemetic Shop - Every
+- Limited Shop - Every 5 minutes
+<br />
+""".splitlines()
 
 
     def run(self):
@@ -36,23 +52,7 @@ class Main:
     def _create_inventory_page(self, all_items: list):
         md_lines = []
 
-        md_lines.append("""
-# the-stock-checker
-This is a stock checker experiment. It uses JStudio's Grow a Garden API to check the stock of items
-
-- [JStudio](https://pypi.org/project/jstudio/)
-- [Grow a Garden API](https://api.joshlei.com/)
-- [JStudio GitHub](https://github.com/JStudiooo/GrowAGardenAPI)
-
-# Restock Times
-
-- Pet Eggs - Every 30 minutes
-- Seed Shop - Every 5 minutes
-- Gear Shop - Every 5 minutes
-- Cosemetic Shop - Every
-- Limited Shop - Every 5 minutes
-
-""")
+        md_lines.extend(self.md_header)
 
         type_rating_names = self._get_type_rarity_names(all_items)
 
@@ -111,7 +111,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 
         table_lines.append("<tr>")
         for color in colors:
-            table_lines.append(f'<td style="background-color: {color}; width: {color_width};></td>"')
+            table_lines.append(f'<td style="background-color: {color}; width: {color_width};"></td>"')
         table_lines.append("</tr>")
 
         table_lines.append("<tr>")
@@ -120,7 +120,7 @@ This is a stock checker experiment. It uses JStudio's Grow a Garden API to check
 
         table_lines.append("<tr>")
         for color in colors:
-            table_lines.append(f'<td style="background-color: {color}; width: {color_width};></td>"')
+            table_lines.append(f'<td style="background-color: {color}; width: {color_width};"></td>"')
         table_lines.append("</tr>")
 
         return "".join(table_lines)
