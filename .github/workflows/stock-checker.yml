@@ -53,5 +53,5 @@ jobs:
 
         git add README.md
 
-        git commit -m "Update ItemRarities" || echo "No Changes!"
+        git commit -m "Update README" || echo "No Changes!"
         git push
