@@ -19,6 +19,12 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v5
 
+    - name: Checkout Repo Wiki
+      uses: actions/checkout@v5
+      with:
+        rpository: ${{ github.repository }}.wiki
+        path: wiki
+
     - name: Setup Python
       uses: actions/setup-python@v6
       with:
@@ -46,12 +52,20 @@ jobs:
           temp
           files
 
-    - name: Commit and Push Changes
+    - name: Commit to Wiki
+      shell: bash
       run: |
+        set -x
+        cd wiki
+
         git config --local user.email = "stock-checker@github.com"
         git config --local user.name = "Stock Checker Bot"
 
-        git add README.md
+        git add Home.md
 
-        git commit -m "Update README" || echo "No Changes!"
+        git commit -m "Update Home" || echo "No Changes!"
         git push
+
+    - name: View Wiki
+      shell: bash
+      run: echo "https://github.com/ahernandez411/the-stock-checker/wiki"
