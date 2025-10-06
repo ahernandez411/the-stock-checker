@@ -56,13 +56,23 @@ jobs:
       shell: bash
       run: |
         set -x
+
+        echo "Move Home.md to wiki/Home.md"
+        mv Home.md wiki/Home.md
+
+        ls -la wiki
+
+        echo "Go into wiki directory"
         cd wiki
 
-        git config --local user.email = "stock-checker@github.com"
-        git config --local user.name = "Stock Checker Bot"
+        echo "Setup git config items"
+        git config --local user.email "stock-checker@github.com"
+        git config --local user.name "Stock Checker Bot"
 
+        echo "Add wiki home"
         git add Home.md
 
+        echo "Commit and Push"
         git commit -m "Update Home" || echo "No Changes!"
         git push
 
