@@ -69,7 +69,7 @@ class Main:
                     category_md_list.append("")
 
                     icon = item.get("icon")
-                    category_md_list.append(f'    - ![{item_name}]({icon})')
+                    category_md_list.append(f'    - <img src="{icon}" alt="{item_name}" width="100" />')
 
                     description = item.get("description")
                     if description:
