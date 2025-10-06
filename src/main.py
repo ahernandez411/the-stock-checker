@@ -41,7 +41,7 @@ class Main:
 
         type_rating_names = self._get_type_rarity_names(all_items)
         for item_type in sorted(type_rating_names):
-            home_md_list.append(f"- [{item_type}]({item_type}.md)")
+            home_md_list.append(f"- [{item_type}]({item_type})")
 
             category_md_list = [
                 f"# {item_type}",
