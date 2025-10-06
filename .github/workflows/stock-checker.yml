@@ -22,7 +22,7 @@ jobs:
     - name: Checkout Repo Wiki
       uses: actions/checkout@v5
       with:
-        rpository: ${{ github.repository }}.wiki
+        repository: ${{ github.repository }}.wiki
         path: wiki
 
     - name: Setup Python
