@@ -54,6 +54,7 @@ class Main:
                     icon = item.get("icon")
                     last_seen = item.get("last-seen")
                     colors = item.get("colors")
+
                     title_html = self._create_color_table(rarity, item_name, colors)
 
                     md_lines.append(f"<h2>{title_html}</h2>")
@@ -95,7 +96,7 @@ class Main:
 
         table_lines.append("<tr>")
         table_lines.append(f'<td colspan="{total_colors}">{rarity} - {item_name}</td>')
-        table_lines.append("<tr>")
+        table_lines.append("</tr>")
 
         table_lines.append("<tr>")
         table_lines.extend(self._create_color_tds(colors, color_width))
