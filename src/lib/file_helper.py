@@ -13,7 +13,7 @@ class FileHelper:
     FILENAME_NOTIFY_IN_STOCK = "notify-in-stock.json"
     FILENAME_RARITY_LEVELS = "rarity-levels.json"
     FILENAME_TYPE_RARITY_NAMES = "type-rarity-names.json"
-    FILENAME_RARITIES_MD = "ItemRarities.md"
+    FILENAME_RARITIES_MD = "README.md"
 
     @staticmethod
     def save_json(directory: str, filename: str, results: object):
