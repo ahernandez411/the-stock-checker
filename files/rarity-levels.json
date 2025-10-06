@@ -1,38 +1,38 @@
 {
     "A": {
         "name": "Transcendent",
-        "color": "✨✨"
+        "color": "✨"
     },
     "B": {
         "name": "Prismatic",
-        "color": "🌈🌈"
+        "color": "🌈"
     },
     "C": {
         "name": "Divine",
-        "color": "🟧🟧"
+        "color": "🟧"
     },
     "D": {
         "name": "Mythical",
-        "color": "🟪🟪"
+        "color": "🟪"
     },
     "E": {
         "name": "Legendary",
-        "color": "🟨🟨"
+        "color": "🟨"
     },
     "F": {
         "name": "Rare",
-        "color": "🟦🟦"
+        "color": "🟦"
     },
     "G": {
         "name": "Uncommon",
-        "color": "🟩🟩"
+        "color": "🟩"
     },
     "H": {
         "name": "Common",
-        "color": "🗑️🗑️"
+        "color": "🗑️"
     },
     "I": {
         "name": "No Rarity",
-        "color": "⬜⬜"
+        "color": "⬜"
     }
 }
