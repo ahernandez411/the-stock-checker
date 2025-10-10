@@ -2,10 +2,7 @@ name: GaG Stock Checker
 
 on:
   schedule:
-  # This schedule covers 12pm - 11:55pm UTC (6am-5:55pm MDT)
-  - cron: "*/7 12-23 * * *"
-  # This schedule covers 12am - 3:55am UTC (6pm - 9:55PM MDT)
-  - cron: "*/7 0-3 * * *"
+  - cron: "1 12 * * *"
 
   workflow_dispatch:
 
@@ -80,3 +77,4 @@ jobs:
     - name: View Wiki
       shell: bash
       run: echo "https://github.com/ahernandez411/the-stock-checker/wiki"
+
